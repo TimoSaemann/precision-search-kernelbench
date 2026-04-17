@@ -19,6 +19,7 @@ For each model it:
 
 The goal is to explore accuracy vs latency trade-offs in low-precision inference, including distribution-aware calibration and sensitive layer exclusion.
 
+---
 
 ## Results
 
@@ -59,8 +60,12 @@ The reported speedups are **average speedup** vs **PyTorch eager**.
 - **Average speedup:** 2.79×
 - **Geometric mean:** 2.04×
 
+---
+
 ## Hardware
 All reported results in this repository were obtained on an RTX 5090.
+
+---
 
 ## Project Files
 
@@ -117,7 +122,7 @@ https://github.com/ScalingIntelligence/KernelBench
 
 ---
 
-# Usage
+## Usage
 
 Example command:
 
@@ -128,7 +133,7 @@ python kernelbench_precision_search.py \
 
 ---
 
-# Output
+## Output
 
 The script produces a JSON results file which can be used in create_figure.py.
 
@@ -158,7 +163,7 @@ Example metrics per variant:
 ---
 
 
-# Limitations
+## Limitations
 
 Some models may fail to compile due to:
 
@@ -170,6 +175,6 @@ RNN/LSTM architectures can be more fragile than CNNs.
 
 ---
 
-# License
+## License
 
 MIT
